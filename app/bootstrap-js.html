@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bootstrap JS project</title>
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+<body>
+  <!-- JS Bootstrap -->
+  <div class="row">
+    <div class="col-12">
+      <div class="table-row">
+        <p class="fs-3 m-2">JS Bootstrap - Вкладки</p>
+        <hr>
+        <div class="container mt-5">
+          <a href="#hideObject" class="btn btn-success" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="hideObject">Открыть или скрыть объект</a>
+
+          <button class="btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#hideObject-2" aria-expanded="false" aria-controls="hideObject-2">Открыть или скрыть 2 объект</button>
+
+          <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target=".multi-objects" aria-expanded="false" aria-controls="hideObject hideObject-2">Открыть или скрыть все объекты</button>
+
+          <div class="collapse multi-objects" id="hideObject">
+            <div class="alert alert-success"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, nisi!</p></div>
+          </div>
+          <div class="collapse multi-objects" id="hideObject-2">
+            <div class="alert alert-danger"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, nisi!</p></div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+        <div class="table-row">
+          <p class="fs-3 m-2">JS Bootstrap - Модальные окна</p>
+          <hr>
+          <div class="container mt-5">
+            <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modal-window">Открыть модальное окно</button>
+            <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modal-window-2">Открыть модальное окно</button>
+
+          </div>
+        </div>
+   </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+        <div class="table-row">
+          <p class="fs-3 m-2">JS Bootstrap - Выпадающий список</p>
+          <hr>
+          <div class="container mt-5">
+              <div class="btn-group">
+                <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Авторизация
+                </button>
+                <div class="dropdown-menu">
+                <form class="px-4 py-3">
+                  <div class="mb-3">
+                    <label for="exampleDropdownFormEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleDropdownFormPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                  </div>
+                  <div class="mb-3">
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                      <label class="form-check-label" for="dropdownCheck">
+                        Запомнить меня
+                      </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Войти</button>
+                </form>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Нет аккаунта? Зарегистрироваться</a>
+                <a class="dropdown-item" href="#">Забыли пароль?</a>
+                </div>
+              </div>
+            <div class="btn-group dropstart">
+              <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Нажми на меня
+              </button>
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Ссылка №1</a>
+                  <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">Ссылка №2</a>
+                <a href="#" class="dropdown-item">Ссылка №3</a>
+                <a href="#" class="dropdown-item">Ссылка №4</a>
+              </div>
+            </div>
+            <div class="btn-group">
+              <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Нажми на меня
+              </button>
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Ссылка №1</a>
+                <a href="#" class="dropdown-item">Ссылка №2</a>
+                <a href="#" class="dropdown-item">Ссылка №3</a>
+                <a href="#" class="dropdown-item">Ссылка №4</a>
+              </div>
+            </div>
+            <div class="btn-group dropend">
+              <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Нажми на меня
+              </button>
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Ссылка №1</a>
+                <a href="#" class="dropdown-item">Ссылка №2</a>
+                <a href="#" class="dropdown-item">Ссылка №3</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">Ссылка №4</a>
+              </div>
+            </div>
+          </div>
+        </div>
+   </div>
+  </div>
+  <div class="modal fade" id="modal-window" tabindex="-1" role="dialog" aria-labelledby="modal-window-label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 сclass="modal-title" id="modal-window-label">Название окна</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"></span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, at minima laborum dolor natus dolore! Cumque quae, minima quia rem.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal-window-2" tabindex="-1" role="dialog" aria-labelledby="modal-window-label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 сclass="modal-title" id="modal-window-label">Название окна</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"></span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus odio eos architecto error voluptatum non inventore nostrum odit assumenda, aut? Quos nam, cupiditate dicta aspernatur ratione cumque, cum error eveniet deserunt? Reiciendis at iusto, saepe nobis consequuntur, facere odio modi sequi architecto earum consequatur maxime laudantium esse quo incidunt aut natus, harum aliquid culpa a et labore assumenda ducimus deleniti voluptates. Voluptatibus accusantium vel eveniet amet. Ratione nulla autem eos obcaecati accusamus amet distinctio beatae facilis blanditiis nemo corporis maiores hic soluta sequi consectetur praesentium inventore necessitatibus culpa temporibus repellendus doloremque deserunt omnis at consequuntur, suscipit? Explicabo fugit dolorum perferendis eveniet minima rem, ex dignissimos qui vel reiciendis! Illum nisi at non dolorem veritatis iure molestiae, a voluptatibus quam quae doloremque ducimus quas quos. Eius, hic, perferendis. Perferendis modi ut molestiae quisquam provident nihil in eum doloremque vitae excepturi, iusto ea porro a, enim quae saepe nostrum inventore repellendus dolor ipsum, dolores, ipsam. Hic voluptatem nulla iste dolor vitae, odit sed impedit eos repellendus accusantium sit ea asperiores tempore a nam quod eveniet quas quae explicabo voluptatum quidem temporibus nihil laudantium minus. Dolor quisquam vero alias ex nesciunt praesentium voluptas excepturi repellendus dolores quod, consequuntur ad atque esse expedita nihil laudantium ratione veritatis eligendi, quidem, suscipit, fugiat tempora! Soluta voluptatibus eius consequuntur dolorum eum consequatur ab sint id, corrupti modi laboriosam iste tempore recusandae animi blanditiis, fuga laudantium quis officia perspiciatis cupiditate expedita ex nisi fugit possimus. Perferendis impedit fugiat blanditiis ullam consequuntur maiores enim quos, sapiente magnam, sint necessitatibus voluptatibus provident nemo dignissimos. Odio nostrum, sed at, qui inventore quaerat explicabo nisi vel porro? Tempore debitis facere quae obcaecati ex aperiam recusandae deserunt ipsam! Odio, distinctio saepe similique repellendus voluptatibus quia! Pariatur, perspiciatis. Ad error voluptatem distinctio est odio quidem, facilis nisi sed dicta, consequatur veniam! Quas consequatur fugiat dolorum similique, hic nobis sint nihil! Laboriosam nesciunt nihil inventore earum magni, necessitatibus explicabo sint atque culpa ipsam officiis, nisi in ducimus hic ipsa reiciendis minus non praesentium iusto ex unde quaerat eaque? Vitae quia eaque pariatur animi corrupti, fuga unde rerum natus nesciunt. Culpa natus amet error, sint maxime, soluta debitis, vero quod quibusdam nulla nesciunt deleniti, consectetur! Illum, tenetur! Commodi est iusto non deleniti laborum minus, velit reprehenderit ad maxime. Iure ea repellat aperiam! Maxime obcaecati dolorem quae necessitatibus nemo dolores quibusdam eos totam, nisi impedit nam et adipisci, enim recusandae ipsa unde minima aperiam, ea. Unde pariatur at repellat sunt optio suscipit autem odit assumenda minima qui, repudiandae inventore similique debitis distinctio aspernatur quia quis. Voluptate impedit ducimus, voluptatem eos quae! Facere facilis corporis, quos recusandae fugit alias deleniti! Maiores ea, rem, eaque reiciendis temporibus adipisci laudantium saepe quam voluptatem deleniti non ullam optio quae iste asperiores pariatur soluta sapiente magni autem. Perferendis dolor, magni consequuntur! Quasi iure necessitatibus officiis fugit deserunt ducimus molestias! Ducimus a nemo, fugiat culpa vero doloribus dolorem at debitis saepe sunt iure nostrum aliquam! Expedita natus pariatur saepe illo obcaecati quo harum, itaque id est laboriosam ea quia nam, adipisci in vitae soluta rem quaerat blanditiis, accusantium laudantium reiciendis sequi dolor consequatur voluptatem. Ipsa eum, tempora laboriosam quam cupiditate similique soluta, autem amet eligendi repudiandae rem quo! Iusto provident repudiandae corporis quo magnam cum alias labore animi, architecto cumque, a, eaque excepturi! Voluptatem, delectus repellendus itaque molestias similique accusantium, reprehenderit, necessitatibus consequatur tenetur sapiente quasi. Dolorum, necessitatibus dicta ducimus sint molestias labore nemo minima blanditiis reprehenderit modi, quidem beatae nisi expedita eaque, sit ratione aspernatur magni deserunt ipsam dolorem laboriosam architecto quisquam! Alias ducimus molestiae voluptates, fugiat, accusamus assumenda porro, tempore quaerat placeat at repellat voluptatibus laudantium hic! Quisquam doloribus sequi distinctio, asperiores nam. Mollitia blanditiis dolorem quaerat accusamus, a perspiciatis sunt ipsum consectetur ea sit repudiandae, ab veniam sint facere ducimus nostrum architecto voluptatibus velit? Laboriosam ullam obcaecati, doloribus alias tenetur aut, sed? Blanditiis ipsa totam quaerat ea est earum hic fugiat rem ullam nam mollitia pariatur doloribus consequuntur deleniti quod ad iste quas, incidunt soluta magnam expedita, molestiae non repellendus. Dolore voluptas ipsam fuga voluptates, maxime quos non quod similique alias earum nam autem est id voluptatem magni sint exercitationem nesciunt perspiciatis. Amet laborum sed minima dolor doloribus molestias quae quo soluta aut magni expedita, vel tempore quisquam, harum aspernatur!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

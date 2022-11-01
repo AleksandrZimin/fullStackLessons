@@ -1,0 +1,114 @@
+/* <div class="container">
+  <div class="row">
+    <div class="col-3 offset-4">  //offset-4 - пропуск колонок */
+
+#alert-a a  {
+  text-decoration: none;
+}
+
+#police a {
+
+  text-decoration: none;
+  /* color: #212529; */
+
+}
+
+.main-form {
+border: .5px solid grey;
+border-radius: 12px;
+margin: 10px;
+padding: 10px 40px 40px 40px;
+box-shadow: 0 0 7px rgba(0,0,0,0.3);
+
+}
+
+#no-brain{
+  text-decoration: none;
+  color: grey;
+  margin-left: 10px;
+}
+
+#btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 20px;
+
+}
+
+#buttons-2 {
+  border: .5px solid gray;
+  border-radius: 12px;
+  box-shadow: 0 0 7px rgba(0,0,0,0.3);
+  margin:10px;
+}
+
+.buttons a {
+  text-decoration: none;
+}
+
+#btn-row-2{
+
+}
+
+#btn-row-2 button {
+
+
+}
+
+#buttons-3 {
+  border: .5px solid gray;
+  border-radius: 12px;
+  box-shadow: 0 0 7px rgba(0,0,0,0.3);
+  margin:10px;
+  padding: 20px;
+}
+
+.table-row {
+  border: .5px solid gray;
+  border-radius: 12px;
+  box-shadow: 0 0 7px rgba(0,0,0,0.3);
+  margin:10px;
+  padding: 20px 0px 20px 0px
+}
+
+.block {
+  width: 100px;
+  height: 100px;
+  background-color: #fafafa;
+  margin: 20px;
+}
+
+.block-2 {
+  width: 200px;
+  height: 100px;
+  background-color: #fafafa;
+  margin: 20px;
+}
+
+.block-row {
+  display: flex;
+}
+
+.box {
+  width: 500px;
+  margin: 20px;
+}
+
+.box-row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.jumbotron {
+  background: #f8f9fa;
+  padding: 30px;
+  margin-bottom: 15px;
+}
+
+.card-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;

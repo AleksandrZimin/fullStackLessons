@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bootstrap project</title>
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js">
+
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+        <!-- Форма Авторизации -->
+        <form class="main-form">
+          <p class="fs-2 mb-4">Авторизация</p>
+          <div class="form-group mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" required aria-describedby="emailHelp" placeholder="Введите Email">
+          </div>
+            <div class="form-group mb-4">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" required placeholder="Введите пароль">
+            <small class="form-text text-muted"><a href="#" id="no-brain">Не помню пароль</a></small>
+            </div>
+            <div class="d-grid gap-2">
+            <button type="button" class="btn btn-outline-secondary mb-3 ">Войти</button>
+            <div class="d-grid gap-2">
+            <button type="button" class="btn btn-outline-primary">Регистрация</button>
+            </div>
+            </div>
+        </form>
+          <!-- Форма Выбор страны -->
+        <form class="main-form">
+          <p class="fs-3 mb-4">Выберите страну</p>
+          <div class="form-group mb-4">
+            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+              <option value="">Россия</option>
+              <option value="">Беларусь</option>
+              <option value="">Украина</option>
+              <option value="">Казахстан</option>
+              <option value="">Армения</option>
+              <option value="">Азербайджан</option>
+              <option value="">Грузия</option>
+              <option value="">Китай</option>
+              <option value="">Польша</option>
+              <option value="">Чехия</option>
+              <option value="">Эстония</option>
+              <option value="">Литва</option>
+              <option value="">Латвия</option>
+              <option value="">Германия</option>
+              <option value="">Франция</option>
+              <option value="">Испания</option>
+              <option value="">Португалия</option>
+              <option value="">Англия</option>
+              <option value="">Финляндия</option>
+              <option value="">Швеция</option>
+              <option value="">Швейцария</option>
+              <option value="">Шотландия</option>
+              <option value="">Уэльс</option>
+              <option value="">Австралия</option>
+              <option value="">США</option>
+              <option value="">Канада</option>
+              <option value="">Куба</option>
+              <option value="">Латинская Америка</option>
+              <option value="">Африка</option>
+              <option value="">Азия</option>
+              <option value="">Остальные...</option>
+            </select>
+          </div>
+        </form>
+      </div>
+      <!-- Форма Регистрации -->
+      <div class="col-4">
+        <form class="main-form">
+          <p class="fs-2 mb-4">Регистрация</p>
+          <div class="form-group mb-3">
+            <label for="name" class="form-label">Имя</label>
+            <input type="text" class="form-control" id="exampleInputNane" name="text" required placeholder="Введите имя"  aria-describedby="emailHelp">
+            <label for="name" class="form-label">Фамилия</label>
+            <input type="text" class="form-control" id="exampleInputNane" name="text" required placeholder="Введите фамилию" aria-describedby="emailHelp">
+            <label for="name" class="form-label">Отчество</label>
+            <input type="text" class="form-control" id="exampleInputNane" name="text" placeholder="Не обязательно" aria-describedby="emailHelp">
+          </div>
+          <div class="form-group mb-3 form-check-inline" id="male-radio">
+            <div class="form-group form-check-inline">
+            <input class="form-check-input" type="radio" name="male" value="male" id="flexRadioDefault1" >
+            <label class="form-check-label" for="flexRadioDefault1" >Мужской</label>
+            </div>
+            <div class="form-group form-check-inline">
+              <input class="form-check-input" type="radio" name="male" value="male" id="flexRadioDefault2" >
+              <label class="form-check-label" for="flexRadioDefault2" >Женский</label>
+            </div>
+            </div>
+          <div class="form-group mb-3">
+            <label for="tel" class="form-label">Телефон</label>
+            <input type="tel" class="form-control" id="exampleInputEmail1" required placeholder="Введите номер" aria-describedby="emailHelp">
+          </div>
+          <div class="form-group mb-3">
+            <label for="Email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" required placeholder="Введите Email" aria-describedby="emailHelp">
+          </div>
+            <div class="form-group mb-3">
+            <label for="Password" class="form-label">Придумайте пароль</label>
+            <input type="password" class="form-control mb-3" id="exampleInputPassword1" required placeholder="Придумайте пароль">
+            <input type="password" class="form-control" id="exampleInputPassword1" required placeholder="Повторите пароль">
+            <small class="form-text text-muted">Пароль должен содержать 8 - 16 символов.</small>
+            </div>
+            <div class="form-group mb-4 form-check form-switch">
+              <input type="checkbox" class="form-check-input" id="check-box-1" name="checkbox">
+              <label class="form-check-label" for="check-box-1">Подписаться на рассылку</label>
+            </div>
+            <div class="form-group mb-5 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1" required name="checkbox">
+              <label class="form-check-label" id="police" for="exampleCheck1">Согласен с <a href="#">Политикой обработки персональных данных</a>  и <a href="#">Пользовательским соглашением</a></label>
+            </div>
+            <div class="d-grid gap-2">
+            <button type="button" class="btn btn-outline-primary">Зарегистрироваться</button>
+            </div>
+        </form>
+      </div>
+      <!-- Форма Восстановление пароля -->
+      <div class="col-4">
+        <form class="main-form">
+          <p class="fs-3 mb-4">Восстановление пароля</p>
+          <div class="form-group mb-4">
+            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" required aria-describedby="emailHelp" placeholder="Введите email для восстановления">
+            <small class="form-text text-muted ">На указанную почту придет инструкция по восстановлению пароля</small>
+          </div>
+            <div class="d-grid gap-2">
+            <button type="button" class="btn btn-outline-primary">Отправить</button>
+            </div>
+        </form>
+        <!-- Кнопки -->
+        <div class="123" id="buttons-2">
+          <p class="fs-3 m-2">Кнопки</p>
+          <hr>
+          <div class="buttons"  id="btn-row">
+          <button type="button" class="btn btn-light btn-sm m-3">Вход</button>
+          <button type="button" class="btn btn-success m-3">Сохранить</button>
+          <button type="button" class="btn btn-danger m-3">Удалить</button>
+          <button type="button" class="btn btn-outline-secondary m-3">Принять</button>
+          <button type="button" class="btn btn-outline-primary m-3">Обновить</button>
+          <button type="button" class="btn btn-outline-dark  m-3">Смотреть</button>
+          <a href="#" class="btn btn-link m-3">Ссылка</a>
+          <button type="button" class="btn btn-warning m-3">Инфо</button>
+          <button type="button" class="btn btn-info m-3">Проверить</button>
+          <button type="button" class="btn btn-primary m-3 d-block w-100">Принять</button>
+          </div>
+        </div>
+        <div class="223" id="buttons-3">
+          <p class="fs-3 m-1">Вкладки</p>
+          <hr>
+          <div class="btn-group btn-group-lg"  id="btn-row-2">
+          <button class="btn btn-light btn active">Первая</button>
+          <button class="btn btn-success">Вторая</button>
+          <button class="btn btn-danger">Третья</button>
+          </div><br>
+          <hr>
+
+          <div class="btn-group btn-group-sm  btn-group-vertical"  id="btn-row-2">
+          <button class="btn btn-light btn">Первая</button>
+          <button class="btn btn-outline-success">Вторая</button>
+          <button class="btn btn-outline-danger">Третья</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Таблица -->
+    <div class="row">
+      <div class="col-6">
+        <div class="table-row">
+          <p class="fs-3 m-2">Таблицa 1</p>
+          <hr>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Имя</th>
+              <th scope="col">Фамилия</th>
+              <th scope="col">Дата рождения</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Олег</td>
+              <td>Смирнов</td>
+              <td>01.09.1980</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Александр</td>
+              <td>Овечкин</td>
+              <td>13.07.1986</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td >Федор</td>
+              <td >Антонов</td>
+              <td>11.11.1989</td>
+            </tr>
+          </tbody>
+      </table>
+      </div>
+      </div>
+      <div class="col-6">
+        <div class="table-row">
+          <p class="fs-3 m-2">Таблица 2</p>
+          <hr>
+        <table class="table table-striped-columns table-hover table-dark">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Имя</th>
+              <th scope="col">Фамилия</th>
+              <th scope="col">Дата рождения</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Олег</td>
+              <td>Смирнов</td>
+              <td>01.09.1980</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Александр</td>
+              <td>Овечкин</td>
+              <td>13.07.1986</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td >Федор</td>
+              <td >Антонов</td>
+              <td>11.11.1989</td>
+            </tr>
+          </tbody>
+      </table>
+      </div>
+      </div>
+    </div>
+    <!-- Блоки  -->
+    <div class="row">
+      <div class="col-12">
+        <div class="table-row">
+          <p class="fs-3 m-2">Блоки</p>
+          <hr>
+          <div class="block-row">
+            <div class="block border border-primary rounded"></div>
+            <div class="block border border-info rounded-circle"></div>
+            <div class="block-2 border border-dark rounded-pill"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Уведомления -->
+    <div class="row">
+      <div class="col-12">
+        <div class="table-row">
+          <p class="fs-3 m-2">Уведомления</p>
+          <hr>
+          <div class="box-row">
+          <div class="box">
+           <div class="alert alert-info" id="alert-a">Lorem ipsum dolor <a href="#" class="alert-link">ссылка</a> sit amet.</div>
+          </div>
+          <div class="box">
+           <div class="alert alert-danger" id="alert-a">
+             <h4 class="alert-heading">Внимание!</h4>Lorem ipsum dolor <a href="#" class="alert-link">ссылка</a> sit amet. <hr>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis..</div>
+          </div>
+          <div class="box">
+           <div class="alert alert-success" id="alert-a">
+             <h4 class="alert-heading">Успешно!</h4>Lorem ipsum dolor <a href="#" class="alert-link">ссылка</a> sit amet. <hr>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis..</div>
+          </div>
+          <div class="box">
+           <div class="alert alert-primary" id="alert-a">
+             <h1>Сообщения <span class="badge bg-secondary">10</span></h1>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- Навигация -->
+    <div class="row">
+      <div class="col-6">
+        <div class="table-row">
+          <p class="fs-3 m-2">Навигация</p>
+          <hr>
+          <div class="container mt-2">
+            <nav class="bg-light p-3 mb-1">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"> <a href="#">Главная страница</a></li>
+                <li class="breadcrumb-item"> <a href="#">Все статьи</a></li>
+                <li class="breadcrumb-item active">Статья</li>
+              </ol>
+            </nav>
+            <div class="block-row-2">
+              <div class="jumbotron">
+                <h4 class="displa-2">Hello</h4>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci cum aliquid nobis, quas nisi rerum.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="table-row">
+          <p class="fs-3 m-2">Навигация</p>
+          <hr>
+          <div class="container mt-2">
+            <nav class="bg-light p-3 mb-1">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"> <a href="#">Главная страница</a></li>
+                <li class="breadcrumb-item"> <a href="#">Все статьи</a></li>
+                <li class="breadcrumb-item active">Статья</li>
+              </ol>
+            </nav>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item active">Элемент №1</li>
+              <li class="list-group-item">Элемент №2</li>
+              <li class="list-group-item">Элемент №3</li>
+              <li class="list-group-item disabled">Элемент №4</li>
+              <li class="list-group-item">Элемент №5</li>
+              <li class="list-group-item">Элемент №6</li>
+            </ul><br>
+            <ul class="list-group list-group-horizontal">
+              <li class="list-group-item list-group-item-success">Элемент №1</li>
+              <li class="list-group-item list-group-item-success">Элемент №2</li>
+              <li class="list-group-item list-group-item-danger">Элемент №3</li>
+              <li class="list-group-item disabled">Элемент №4</li>
+              <li class="list-group-item">Элемент №5</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Карточки -->
+    <div class="row">
+      <div class="col-12">
+        <div class="table-row">
+          <p class="fs-3 m-2">Flex</p>
+          <hr>
+          <div class="d-flex flex-row justify-content-between align-items-center mt-5">
+            <div class="border">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, fuga.
+            </div>
+            <div class="border">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, fugit porro voluptate nesciunt temporibus quaerat iure deleniti ullam nihil ea nostrum aliquid voluptates necessitatibus quisquam, vitae qui voluptas possimus, ducimus.
+            </div>
+            <div class="border">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, fuga.
+            </div>
+        </div>
+        <br>
+        <p class="fs-3 m-2">Card</p>
+        <hr>
+        <div class="card-row">
+        <div class="card mt-5 w-25">
+          <img src="https://www.clipartkey.com/mpngs/m/244-2446217_it-png-photo-information-technology-team-logo.png" alt="no" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Что-то про что-то</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur quisquam deleniti eaque, deserunt voluptatibus libero?</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Элемент №1</li>
+            <li class="list-group-item">Элемент №2</li>
+            <li class="list-group-item">Элемент №3</li>
+            <li class="list-group-item">Элемент №4</li>
+          </ul>
+          <div class="card-body">
+            <a href="#" class="card-link">Читать дальше</a>
+          </div>
+        </div>
+        <div class="card mt-5" style="width: 18rem;">
+          <img src="https://russianshop.org/wp-content/uploads/2021/04/talent-1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Карточка товара</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary stretched-link">Buy</a>
+            </div>
+        </div>
+        <div class="row g-0 bg-light position-relative">
+          <div class="col-md-6 mb-md-0 p-md-4">
+            <img src="https://renewablenergy-world.com/wp-content/uploads/2022/08/oblachniye-servery-1.jpg" class="w-100" alt="...">
+          </div>
+          <div class="col-md-6 p-4 ps-md-0">
+            <h5 class="mt-0">Columns with stretched link</h5>
+            <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+            <a href="#" class="stretched-link">Читать далее...</a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    </div>
+</body>
+</html>
