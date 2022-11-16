@@ -18,14 +18,15 @@ h1 {
   text-align: center;
   font-size: 50px;
   font-weight: bold;
-  margin: 60px 0;
+  margin: 40px 0!important;
 }
 
 .btn {
   width: 100px;
   height: 56px;
+  line-height: 43.5px!important;
   border: 1px solid black;
-  padding: 10px;
+  padding: 0px;
   overflow: hidden;
   border-radius: 12px;
 }
@@ -36,13 +37,11 @@ h1 {
 }
 
 .btn a {
-
   text-decoration: none;
   color: black;
   margin: 0 auto;
   text-align: center;
   top: 50%
-
 }
 
 .btn:hover a {
@@ -79,4 +78,9 @@ a {
 .btn-main a{
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(44, 44, 44);
+}
+
+.learning>div>a:hover {
+  font-size: 24px;
+  transition-delay: .5s;
 }
