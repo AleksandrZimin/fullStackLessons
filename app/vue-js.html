@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Vue JS</title>
+   <link rel="stylesheet" href="./css/vue-js.css">
+</head>
+<body>
+   <div id="app">
+      <h1>{{ title }}</h1>
+      <p>{{isTrue}}</p>
+      <button @click="changeText">Нажми на меня</button><br><br>
+   </div>
+   <div id="second">
+      <input type="text" @input="increment($event.target.value)">
+      <p>{{ first_num }}</p>
+      <p><b>{{ second_num }}</b></p>
+   </div>
+   <div id="tree">
+      <h1>{{ title }}</h1>
+      <p v-bind:style="style">{{isTrue}}</p>
+      <input type="text" @input="style = $event.target.value"><br><br>
+      <hr>
+      <button @click="changeText">Нажми на меня</button>
+   </div>
+
+
+   <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8"></script>
+   <script src="./js/vue.js"></script>
+</body>
+</html>
