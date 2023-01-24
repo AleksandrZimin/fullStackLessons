@@ -93,29 +93,48 @@ a {
 }
 
 .learning>div>a:hover {
-  font-size: 24px;
-  transition-delay: .5s;
+  font-size: 52px;
+  transition-delay: 8.5s !important;
   
 }
 
 .title {
-  font-size: 64px;
+  text-align: center;
+  margin-left: 86px !important;
+  font-size: 104px;
   text-shadow: 2px 2px 5px rgb(146, 141, 141);
 }
 
 .title::after {
-  content: "ver 1.04";
-  font-size: 10px;
+  content: "ver 1.05";
+  font-size: 12px;
   margin-left: 15px;
-  
+  font-weight: 600;
+  text-shadow: 1px 1px 5px rgb(0, 0, 0, 0.3);
+}
+
+.it-title::after {
+  content: "- Full Stack разработчик";
+  font-size: 36px;
+  margin-left: 15px;
+  font-weight: 400;
+  text-shadow: 1px 1px 5px rgb(0, 0, 0, 0.3);
+}
+
+.ya-title::after {
+  content: "- Веб разработчик";
+  font-size: 36px;
+  margin-left: 15px;
+  font-weight: 400;
+  text-shadow: 1px 1px 5px rgb(0, 0, 0, 0.3);
 }
 
 .subtitle {
   text-align: center;
-  margin: 0 auto 20px;
+  margin: 20px auto;
   font-size: 14px;
   line-height: 1.5;
-  width: 530px!important;
+  width: 630px!important;
 }
 
 .page {
@@ -146,6 +165,31 @@ a {
   flex-direction: column-reverse;
 }
 
-.container {
-  background-image: url(../..);
+.body {
+  background-image: url('../../img-main/white-striped-cloth.png');
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: repeat;
+
+}
+
+.lessons-block {
+margin-bottom: 30px;
+background-color: rgba(255, 255, 255, 0.705);
+}
+
+.preloader {
+  font-size: 14px;
+  line-height: 1.5;
+}
+.footer {
+  padding: 30px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  
+
 }
