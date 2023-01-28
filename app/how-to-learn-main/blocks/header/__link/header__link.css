@@ -1,0 +1,10 @@
+.header__link {
+  display: inline-block;
+  text-decoration: none;
+  color:  #2f80ed;
+  transition: 200ms ease;
+}
+
+.header__link:hover {
+  color: #2f81edb4;
+}
