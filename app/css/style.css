@@ -124,7 +124,7 @@ a {
 }
 
 .title::after {
-  content: "ver 1.07";
+  content: "ver 1.06";
   font-size: 12px;
   margin-left: 15px;
   font-weight: 600;
