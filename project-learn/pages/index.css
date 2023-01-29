@@ -1,0 +1,86 @@
+@import url(../vendor/normalize.css);
+@import url(../blocks/page/page.css);
+@import url(../blocks/link/link.css);
+@import url(../blocks/rotation/rotation.css);
+@import url(../blocks/section-title/section-title.css);
+@import url(../blocks/section-title/section-title_theme_dark.css);
+@import url(../blocks/section-subtitle/section-subtitle.css);
+@import url(../blocks/section-subtitle/section-subtitle_theme_dark.css);
+/* Шапка */
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/header__title.css);
+@import url(../blocks/header/header__subtitle.css);
+@import url(../blocks/header/header__link.css);
+@import url(../blocks/header/header__main-illustration.css);
+@import url(../blocks/header/header__square-pic.css);
+@import url(../blocks/header/header__title.css);
+@import url(../blocks/logo/logo_place_header.css);
+/* Контент */
+@import url(../blocks/content/content.css);
+/* Блок two-columns */
+@import url(../blocks/description/description.css);
+@import url(../blocks/two-columns/two-columns.css);
+@import url(../blocks/two-columns/two-columns__brief.css);
+@import url(../blocks/two-columns/two-columns__main-text.css);
+@import url(../blocks/two-columns/two-columns__paragraph.css);
+@import url(../blocks/two-columns/two-columns__span-accent.css);
+/* Блок cards */
+@import url(../blocks/techniques/techniques.css);
+@import url(../blocks/cards/cards.css);
+@import url(../blocks/cards/cards__item.css);
+@import url(../blocks/cards/cards__title.css);
+@import url(../blocks/cards/cards__description.css);
+@import url(../blocks/cards/cards__image.css);
+/* Блок видео */
+@import url(../blocks/video/video.css);
+@import url(../blocks/video/video__iframes.css);
+@import url(../blocks/video/video__iframe.css);
+/* Блок oakley */
+@import url(../blocks/oakley/oakley.css);
+/* Блок feynman */
+@import url(../blocks/feynman/feynman.css);
+@import url(../blocks/feynman/feynman__title.css);
+@import url(../blocks/feynman/feynman__subtitle.css);
+@import url(../blocks/feynman/feynman__link.css);
+@import url(../blocks/feynman/feynman__img.css);
+/* Блок table */
+@import url(../blocks/digits/digits.css);
+@import url(../blocks/table/table.css);
+@import url(../blocks/table/table__cell.css);
+@import url(../blocks/table/table__heading.css);
+@import url(../blocks/table/table__text.css);
+/* Блок khan */
+@import url(../blocks/khan/khan.css);
+@import url(../blocks/khan/khan__container.css);
+@import url(../blocks/khan/khan__author.css);
+@import url(../blocks/khan/khan__title.css);
+@import url(../blocks/khan/khan__quote.css);
+@import url(../blocks/khan/khan__quote-author.css);
+@import url(../blocks/khan/khan__quote-author-subline.css);
+@import url(../blocks/khan/khan__book-container.css);
+@import url(../blocks/khan/khan__book-pic.css);
+@import url(../blocks/khan/khan__buy-link.css);
+/* Блок kaufman */
+@import url(../blocks/kaufman/kaufman.css);
+@import url(../blocks/kaufman/kaufman__triangle.css);
+@import url(../blocks/table/table__cell_theme_dark.css);
+@import url(../blocks/table/table__heading_theme_dark.css);
+@import url(../blocks/table/table__text_theme_dark.css);
+/* Блок resources */
+@import url(../blocks/resources/resources.css);
+@import url(../blocks/resources/resources__logo-zone.css);
+@import url(../blocks/resources/resources__logo.css);
+@import url(../blocks/resources/resources__link.css);
+/* Футер */
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/footer__columns.css);
+@import url(../blocks/footer/footer__column.css);
+@import url(../blocks/footer/footer__column_content_copyright.css);
+@import url(../blocks/footer/footer__column_content_info.css);
+@import url(../blocks/footer/footer__column_content_social.css);
+@import url(../blocks/footer/footer__column-links.css);
+@import url(../blocks/footer/footer__column-link.css);
+@import url(../blocks/footer/footer__column-heading.css);
+@import url(../blocks/footer/footer__author.css);
+@import url(../blocks/footer/footer__social-icon.css);
+@import url(../blocks/logo/logo_place_footer.css);
