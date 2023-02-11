@@ -25,18 +25,32 @@ h1 {
   width: 300px;
   height: 150px;
   line-height: 130px!important;
-  border: 1px solid #abb5bf;
   padding: 0px;
   overflow: hidden;
-  border-radius: 12px;
-  font-size: 16px;
+  border-radius: 12px !important;
+  font-size: 18px !important;
+  transition: 420ms ease-in-out !important  ;
+}
+
+@media screen and (max-width: 770px) {
+  .btn {
+    width: 100%;
+    min-width: min-content !important ;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .btn {
+    width: 90%;
+    min-width: min-content !important ;
+    height: auto;
+  }
 }
 
 .btn:hover {
-  border: 1px solid red ;
-  cursor: pointer;
-  line-height: 125px!important;
-  font-size: 18px;
+  font-size: 20px !important;
+  transition: 320ms ease-in-out !important  ;
 }
 
 .btn a {
@@ -58,24 +72,13 @@ a {
 
 
 .learning {
-  flex-wrap: wrap;
-  /* text-align: center;
-  align-items: center; */
-  width: 90% !important; 
-  margin: auto;
-}
-
-.learning::after {
-  content: "Развернуть";
-  display: none;
-  text-align: center;
+  margin: auto !important;
+  display: grid;
+  grid-template-rows: 1ft 1ft 1ft;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: left ;
   align-items: center;
-  justify-content: center;
-  margin: auto;
-  width: 150px;
-  height: 50px;
-  border: .1px solid rgba(0, 0, 0, 0.445);
-  border-radius: 24px;
+
 }
 
 .item {
@@ -83,37 +86,7 @@ a {
 }
 
 .m-3 {
-  margin: auto;
-}
-
-.btn-main{
-  display: block;
-  width: 80px;
-  height: 40px;
-  border: .5px solid #666;
-  font-size: 22px;
-  border-radius: 12px;
-  position: relative;
-  left: 30%;
-  background-color: rgb(253, 231, 231);
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.btn-main:hover{
-  border: 1.5px solid rgb(36, 36, 36);
-  font-size: 24px;
-}
-
-.btn-main a{
-  font-family: Arial, Helvetica, sans-serif;
-  color: rgb(44, 44, 44);
-}
-
-.learning>div>a:hover {
-  font-size: 52px;
-  transition-delay: 8.5s !important;
-  
+  margin: auto !important ;
 }
 
 .title {
@@ -123,12 +96,37 @@ a {
   text-shadow: 2px 2px 5px rgb(146, 141, 141);
 }
 
+@media screen and (max-width: 1000px) and (min-width: 500px) {
+  .title {
+    text-align: center;
+    margin: 20px auto !important;
+    font-size: 70px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .title {
+    text-align: center;
+    margin: 20px auto !important;
+    font-size: 40px;
+  }
+}
+
 .title::after {
-  content: "ver 1.07";
+  content: "ver 1.08";
   font-size: 12px;
   margin-left: 15px;
   font-weight: 600;
   text-shadow: 1px 1px 5px rgb(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 1000px) and (min-width: 500px) {
+  .title::after {
+    content: "v 1.08";
+    font-size: 12px;
+    font-weight: 400;
+    text-shadow: 1px 1px 5px rgb(0, 0, 0, 0.3);
+  }
 }
 
 .it-title::after {
@@ -139,12 +137,24 @@ a {
   text-shadow: 1px 1px 5px rgb(0, 0, 0, 0.3);
 }
 
+@media screen and (max-width: 770px) {
+  .it-title::after {
+    font-size: 26px
+  }
+}
+
 .ya-title::after {
   content: "- Веб разработчик";
   font-size: 36px;
   margin-left: 15px;
   font-weight: 400;
   text-shadow: 1px 1px 5px rgb(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 770px) {
+  .ya-title::after {
+    font-size: 26px
+  }
 }
 
 .subtitle {
@@ -158,7 +168,7 @@ a {
 .page {
   margin: 0 auto;
   margin: 50px;
-  padding: 20px;
+  padding: 50px 20px;
   border-radius: 12px;
   box-shadow: inset 0 -1em 3em #f8f9fa, 0 0 0 2px rgb(255 255 255), 0.1em 0.3em 1em #212529;
   justify-content: center;
@@ -168,6 +178,12 @@ a {
   display: inline;
   text-shadow: 2px 2px 5px rgb(146, 141, 141);
   font-size: 36px;
+}
+
+@media screen and (max-width: 770px) {
+  .block-title {
+    font-size: 26px
+  }
 }
 
 .block-subtitle {
@@ -200,6 +216,7 @@ background-color: rgba(255, 255, 255, 0.705);
   font-size: 14px;
   line-height: 1.5;
 }
+
 .footer {
   padding: 30px;
   min-height: 300px;
