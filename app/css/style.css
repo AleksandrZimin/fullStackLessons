@@ -82,10 +82,9 @@ a {
 .learning {
   margin: auto !important;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  justify-items: left ;
-  align-items: center;
-
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-columns: min-content;
+  justify-items: center;
 }
 
 .item {
