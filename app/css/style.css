@@ -225,10 +225,6 @@ background-color: rgba(255, 255, 255, 0.705);
   text-align: center;
 }
 
-
-
-
-
 .copy::after {
   content: "ver 2.01";
   font-size: 12px;
@@ -252,7 +248,6 @@ background-color: rgba(255, 255, 255, 0.705);
   }
 }
 
-
 .gb-title::after {
   content: "- Инженер по автоматизации тестирования (Java)";
   font-size: 36px;
@@ -269,4 +264,24 @@ background-color: rgba(255, 255, 255, 0.705);
 
 .close-open {
   display: none;
+}
+
+.row {
+  position: relative !important ;
+}
+.arrow {
+  display: inline;
+  max-width: 30px !important ;
+  min-height: 30px;
+  background-size: 30px;
+  background-image: url(../../img-main/arrow-down-sign-to-navigate.png);
+  position: absolute;
+  background-repeat:no-repeat;
+  background-position: center;
+  top: 10px;
+  right: 10px;
+}
+
+.arror-rotate {
+  transform: rotate(180deg);
 }
