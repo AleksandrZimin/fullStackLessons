@@ -117,17 +117,8 @@ a {
   }
 }
 
-@media screen and (max-width: 1000px) and (min-width: 500px) {
-  .title::after {
-    content: "v 1.10";
-    font-size: 12px;
-    font-weight: 400;
-    text-shadow: 1px 1px 5px rgb(0, 0, 0, 0.3);
-  }
-}
-
 .it-title::after {
-  content: "- Full Stack разработчик";
+  content: "- Full Stack разработчик (Vue.js)";
   font-size: 36px;
   margin-left: 15px;
   font-weight: 400;
@@ -141,7 +132,7 @@ a {
 }
 
 .ya-title::after {
-  content: "- Веб разработчик";
+  content: "- Веб разработчик (React.js)";
   font-size: 36px;
   margin-left: 15px;
   font-weight: 400;
@@ -181,6 +172,11 @@ a {
   display: inline;
   text-shadow: 2px 2px 5px rgb(146, 141, 141);
   font-size: 36px;
+}
+.block-title:hover {
+  text-decoration: solid;
+  opacity: .8;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 770px) {
@@ -229,7 +225,48 @@ background-color: rgba(255, 255, 255, 0.705);
   text-align: center;
 }
 
-.ver {
-  margin-left: 10px;
-  text-shadow: 1px 2px 2px rgb(90, 90, 90);
+
+
+
+
+.copy::after {
+  content: "ver 2.01";
+  font-size: 12px;
+  margin-left: 15px;
+  font-weight: 600;
+  text-shadow: 1px 1px 5px rgb(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 1000px) and (min-width: 500px) {
+  .copy::after{
+    content: "ver 2.01";
+    font-size: 12px;
+    font-weight: 600;
+    text-shadow: 1px 1px 5px rgb(0, 0, 0, 0.3);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .copy::after {
+    font-size: 11px
+  }
+}
+
+
+.gb-title::after {
+  content: "- Инженер по автоматизации тестирования (Java)";
+  font-size: 36px;
+  margin-left: 15px;
+  font-weight: 400;
+  text-shadow: 1px 1px 5px rgb(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 770px) {
+  .gb-title::after {
+    font-size: 26px
+  }
+}
+
+.close-open {
+  display: none;
 }
